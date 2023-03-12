@@ -8,13 +8,23 @@
 <style>
     select {
         border-radius: 5px;
+        border-width: 2px;
+        border-color: lightgrey;
+        font-weight: bold;
+        font-style: italic;
+        height: 28px;
+        margin: 5px;
     }
     
     a{
       text-decoration: none
     }
     body{
-        background-color: grey
+        background-color: beige;
+        margin: 0
+    }
+    select.hover{
+        border: black
     }
     
 </style>
@@ -38,29 +48,33 @@
 </tr>   
 </table>
     
-<p style="background-color: darkred; text-align: right">
+<p style="background-color: red; text-align: right; margin: 0; line-height: 2.5">
     
-    <label for = "dropdown" value = "hello"></label>
-    <select style = "background-color: lightgrey" id = "dropdown">
-    <option>CDs/DVDs</option>
-    <option>option1</option>
-    <option>option2</option>    
+    <select style = "background-color: red"; id = "dropdown"; onchange = "location = this.value">
+    <option value = "">CDs/DVDs</option>
+    <option value = "https://www.google.com/">Classical</option></a>
+    <option value = "https://www.google.com/">Pop</option>
+    <option value = "https://www.google.com/">Rock and Metal</option>   
+    <option value = "https://www.google.com/">Reggae</option>   
+    <option value = "https://www.google.com/">Other</option>   
+    
     </select> 
-    <select style = "background-color: lightgrey">
+    <select style = "background-color: red">
     <option>Vinyls</option>
     <option>option1</option>
     <option>option2</option>    
     </select> 
-    <select style = "background-color: lightgrey">
+    <select style = "background-color: red">
     <option>Clothing</option>
     <option>option1</option>
     <option>option2</option>    
     </select> 
-    <select style = "background-color: lightgrey">
+    <select style = "background-color: red">
     <option>Instruments</option>
     <option>option1</option>
     <option>option2</option>    
     </select> 
+<br>
 </p>
 
 <p style="position: fixed; bottom: 0; width:100%; background-color: lightblue">
