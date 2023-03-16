@@ -1,2 +1,2 @@
 # TheNote
-CIS 444
+CIS 444 - Team 3
