@@ -1,0 +1,140 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>CDs/DVDs</title>
+  <style>
+    /* styles for select elements */
+    select {
+        border-radius: 5px;
+        border-width: 2px;
+        border-color: lightgrey;
+        font-weight: bold;
+        font-style: italic;
+        height: 28px;
+        margin: 5px;
+    }
+    
+    /* styles for the footer */
+    footer {
+        height: 20px; /* Set the height of the footer as needed */
+    }
+
+    .footer-links {
+        display: flex; /* Use flexbox to create a horizontal layout */
+        justify-content: space-between; /* Add space between links */
+    }
+
+    .footer-links a {
+        font-size: 14px; /* Adjust the font size as needed */
+    }
+
+    /* remove text decoration for all links */
+    a {
+        padding-right: 20px;
+    }
+    
+#account-name{
+  color: aqua;
+}
+
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+    
+    td, th {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: left;
+    }
+    
+    img {
+        max-width: 100%;
+        height: auto;
+        background-color: lightblue;
+    }
+    
+    /* set background color and remove margin for body element */
+    body {
+        background-color: beige;
+        margin: 0;
+    }
+    
+    #profilepicture {
+max-width: 200px;
+    }
+
+    /* hover style for select elements */
+    select:hover {
+        border-color: black;
+    }
+  </style>
+
+</head>
+<body>
+  <!-- header with image link -->
+  <div style="background-color: #00222A;">
+    <a href="main.html"><img src="https://cdn.discordapp.com/attachments/1081053312775889007/1086413142743068802/cropped.jpg"  width="450px" height="200px"></a>
+  </div>
+  
+  <!-- search bar and navigation links -->
+  <table>    
+    <tr>
+        <td style="text-align: right">
+            <span style="display: flex; align-items: center;">
+                <a href="account.html"></a>
+              <img src="https://cdn.discordapp.com/attachments/1081053312775889007/1086884715753123942/Account.png" alt="Account Icon" style="height: 30px; margin-left: 10px;">
+              <a href="accountpageexample.html">Account</a>
+              <img src="https://cdn.discordapp.com/attachments/1081053312775889007/1086884742458245130/signup.png" alt="Sign Up Icon" style="height: 30px; margin-left: 10px;">
+              <a href="google.com">Sign Up</a>
+              <img src="https://cdn.discordapp.com/attachments/1081053312775889007/1086884770002243595/checkout.png" alt="Cart Icon" style="height: 30px; margin-left: 10px;">
+              <a href="google.com">Shopping Cart</a>
+            </span>
+        </td>
+    </tr>   
+  </table>
+  
+  
+  <!-- navigation menu with select elements -->
+  <p style="background-color: red; text-align: right; margin: 0; line-height: 2.5">  
+    <select style="background-color: red"; id="dropdown"; onchange="location = this.value">
+      <option value="">CDs/DVDs</option>
+      <option value="https://www.google.com/">Classical</option></a>
+      <option value="https://www.google.com/">Pop</option>
+      <option value="https://www.google.com/">Rock & Metal</option>   
+      <option value="https://www.google.com/">Reggae</option>   
+      <option value="https://www.google.com/">Other</option>   
+    </select> 
+    <select style="background-color: red">
+      <option value = "https://www.google.com/">Records</option>
+      <option value = "https://www.google.com/">Record Players</option>
+      <option value = "https://www.google.com/">Vinyls</option>    
+    </select> 
+    <select style="background-color: red">
+      <option value = "https://www.google.com/">Merchandise</option>
+      <option value = "https://www.google.com/">Shirts & Hoodies</option>
+      <option value = "https://www.google.com/">Accesories</option>    
+    </select> 
+    <select style="background-color: red">
+      <option value = "https://www.google.com/">Instruments</option>
+      <option value = "https://www.google.com/">Guitars</option>
+      <option value = "https://www.google.com/">Drums</option>    
+      <option value = "https://www.google.com/">Woodwinds</option> 
+      <option value = "https://www.google.com/">Pianos & Keyboards</option> 
+    </select> 
+    <br>
+    <table>
+
+  <!-- user information -->
+  <table>
+    <tr>
+        <td><img src="https://cdn.discordapp.com/attachments/1081053312775889007/1088869812614213802/blank-profile-picture-973460_1280.webp" alt="Profile Picture" id="profilepicture"></td>
+        <td>
+            <h2>Account Information</h2>
+            <p>Account Name: <span id="account-name">John Doe</span></p>
+            <p>Password: <span id="password"> Password </span></p>
+            <p>Shipping Address: <span id = "address"> 12345 Milky Way Lane </span></p>
+            <p>Payment Method: <span id = "payment"> Debit Card </span></p>
+        </td>
+    </tr>
