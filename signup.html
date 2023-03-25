@@ -47,16 +47,17 @@
             font-weight: bold;
             margin: 0 auto;
             padding: 10px;
-            text-align: left;
+            text-align: center;
         }
 
         form {
             border: 3px solid black;
             width: 80%;
             margin: 0 auto;
+            text-align: left;
         }
         input[type=text], input[type=password] {
-            width: 100%;
+            width: 97%;
             margin-bottom: 20px;
             padding: 12px;
             border: 1px solid black;
@@ -70,7 +71,7 @@
             color: solid black;
             border: 1px solid black;
             cursor: pointer;
-            width: 100%;
+            width: 90%;
             margin: 0 auto;
             height: 40px;
             font-size: 17px;
@@ -117,24 +118,24 @@
 </head>
 <body>
     <a href = "templateformusic.html"><img src = "https://media.discordapp.net/attachments/1081053312775889007/1086413142743068802/cropped.jpg?width=1709&height=629" width = "500px" height = "200px"></a>
-    <form action="action_page.php" style="border:1px solid black; width: 65%;">
+    <form action="action_page.php" style="border-radius: 10px; border:1px solid black; width: 55%;">
     <div class="container">
         <p>Please fill in this form to create an account.</p>
         <hr>
-        <label for="email"><b>Email</b></label>
+        <label style= "text-align: left;" for="email"><h3>Email</h3></label>
         <input type="text" placeholder="Enter Email" name="email" required>
         
-        <label for="psw"><b>Password</b></label>
+        <label style= "text-align: left;" for="psw"><h3>Password</h3></label>
         <input type="password" placeholder="Enter Password" name="psw" required>
 
-        <label for="psw-repeat"><b>Repeat Password</b></label>
+        <label style= "text-align: left;" for="psw-repeat"><h3>Repeat Password</h3></label>
         <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
 
         <label>
         <input type="checkbox" checked="checked" name="remember" style="margin: 0 auto;"> Remember me
         </label>
 
-        <p style="font-size: 20px; font-style: normal; font-weight: lighter;">By creating an account you agree to our <a href="#" style="text-decoration: none; display: flex; justify-content: left; font-style: italic; background-color: beige; color: blue">Terms & Privacy</a></p>
+        <p style="text-align: left; font-size: 20px; font-style: normal; font-weight: lighter;">By creating an account you agree to our <a href="#" style="text-decoration: none; display: flex; justify-content: left; font-style: italic; background-color: beige; color: blue">Terms & Privacy</a></p>
 
         <div class="clearfix">
         <button type="button" class="cancelbtn">Cancel</button>
