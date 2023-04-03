@@ -6,110 +6,220 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FAQ's</title>
     <style>
-        select {
-            border-radius: 5px;
-            border-width: 1px;
-            border-color: lightgrey;
-            font-weight: bold;
-            font-style: italic;
-            font-size: 18px;
-            height: 30px;
-            margin: 5px;
-            background-color: red
-        }
-        
-        a{
-          text-decoration: none
-        }
-        body{
-            background-color: white;
-            margin: 0
-        }
-        
-        
-        select.hover{
-            border: black;
-        }
-        
-        options.hover{
-            background-color: darkred;
-        }
-        
-        #contents{
-            margin-left: 150px;
-            margin-right: 150px;
-            background-color: lightgrey;
-            height: 1000px;
-            padding: 50px;
-            padding-top: 10px;
-        }
-        #searchbar{
-            width: 670px;
-            border-radius: 5px;
-            border-color: lightgrey;
-            height: 25px;
-            font-size: large;
-        }
-        
-        #searchButton {
-            height: 31px;
-            width: 70px;
-            font-size: large;
-            background-color: red;
-            border-radius: 5px;
-            border-color: lightgrey;
-        }
-        
-    </style>
-        
-    </head>
+
+    #contents {
+        text-align: center;
+    }
+
+    /* styles for select elements */
+    select {
+    background-color: red;
+    color: black;
+    border-radius: 5px;
+    border-width: 2px;
+    border-color: lightgrey;
+    font-weight: bold;
+    font-style: italic;
+    height: 28px;
+    margin: 5px;
+}
+
+/* set text color for option elements */
+select option {
+  color: black;
+}
+    #FAQs {
+     text-align: center;
+    text-decoration: underline;
+}
+
+/* remove text decoration for all links */
+    a {
+      padding-right: 20px;
+    }
+  
+/* style for table */
+    table {
+			border-collapse: collapse;
+			width: 100%;
+            
+		}
+/* set left alignment for table cells */	
+		td, th {
+			text-align: left;
+		}
+
+/* set maximum width for images */	
+		img {
+			max-width: 100%;
+			height: auto;
+      background-color: red;
+		}
+/* set background color and remove margin for body element */
+    body {
+        background-color: lightblue;
+        margin: 0;
+    }
+    
+/* hover style for select elements */
+    select:hover {
+        border-color: black;
+    }
+  
+/* style for search bar */    
+    #searchbar {
+        width: 500px;
+        height: 30px;
+        font-size: 20px;
+        border-radius: 5px
+    }
+/* style for customer buttons */
+    .customerbuttons {
+        color: black;
+        text-decoration: underline;
+        font-weight: bold
+    }
+/* style for customer buttons */
+      .row {
+    display: block;
+    text-align: center;
+  }
+  
+/* style for column */
+   .column {
+    margin: 0 10px; /* Change the value to adjust the spacing */
+  }
+  
+/* style for images in columns */
+  .column img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+/* style for caption */
+  .caption {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  /* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* This section styles the close button when it's hovered or in focus */
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* This section styles the navigation links */
+nav a {
+  color: red;
+  text-decoration: none;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+/* styles for the footer */
+  footer {
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.footer-links {
+  display: flex; /* Use flexbox to create a horizontal layout */
+  justify-content: center; /* Add space between links */
+  font-size: 14px; /* Adjust the font size as needed */
+}
+</style>
+
+</head>
     
     
-    <body>
+<body>
     
     
-    
-     
-    
-    <table>    
-    <tr>
-    <td style = "vertical-align:bottom;"> 
-        <a href = "index.html"><img src = "https://media.discordapp.net/attachments/1081053312775889007/1086413142743068802/cropped.jpg?width=1709&height=629" width = "750px" height = "200px"></a>   
-        <input type = "text" maxlength = "60" placeholder="Search" id = "searchbar"></input><input button type = "submit" value = "Search" id = "searchButton"></input>
-    </td>
-        <td style="width: 90em; text-align: right; vertical-align: bottom">
-        <p>333 S Twin Oaks Valley Rd, San Marcos, CA 92096<br><a type = "number"><a href="tel:+8583828890">+1 (858) 382-8890</a><br>
-        <b>Social Media</b><br><img src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2016/05/instagram-logo.png" alt="Instagram logo" height= "50px"/>
-        <img src="https://img.freepik.com/premium-vector/blue-social-media-logo_197792-1759.jpg?w=2000" alt="fb logo" height = "49px"></p>
-        <a href = "signin.html"><img src = "https://media.discordapp.net/attachments/1081053312775889007/1086884715753123942/Account.png?width=237&height=232"; style = "width: 120px; height: 120px"></a> 
-            <a href = "signup.html"><img src = "https://media.discordapp.net/attachments/1081053312775889007/1086884742458245130/signup.png?width=194&height=201"> </a> 
-            <a href = "shoppingcart.html"><img src = "https://media.discordapp.net/attachments/1081053312775889007/1086884770002243595/checkout.png?width=212&height=176" style = "width: 120px; height: 100px"> </a>
-        
-    </tr>   
+   <!-- header with image link -->
+<div style="background-color: #00222A;">
+    <table>
+      <tr>
+        <td>
+          <a href="index.html"><img src="https://cdn.discordapp.com/attachments/1081053312775889007/1086413142743068802/cropped.jpg" alt="image description" width="450" height="200"></a>
+        </td>
+        <td style="text-align: right; color: grey">
+          333 S Twin Oaks Valley Rd, San Marcos, CA 92096<br><a href="tel:+18583828890"><span style="color: lightblue">+1 (858) 382-8890</span></a>
+        </td>
+      </tr>
     </table>
+  </div>
+    
+  <!-- search bar and navigation links -->
+  <table style="background-color:white; padding-top: 10px;">    
+    <tr>
+      <td>
+        <input type="text" id="searchbar">
+        <input type="submit" value="Search" style="height: 34px; width: 75px; border-color: grey; border-radius: 5px; border-width: 1px; font-size: 20px; background-color: lightgrey">
+      </td>
+      <td style="text-align: right; width: 35em">
+        <span style="display: flex; align-items: center;">
+          <a href="google.com">
+            <img src="https://cdn.discordapp.com/attachments/1081053312775889007/1086884715753123942/Account.png" alt="Account Icon" style="height: 30px; margin-right: 10px;">
+          </a>
+          <a href="account.html"><span class="customerbuttons">Account</span></a>
+          <a href="signup.html" style="display: inline-block;">
+            <img src="https://cdn.discordapp.com/attachments/1081053312775889007/1086884742458245130/signup.png" alt="Sign Up Icon" style="height: 30px; margin-right: 10px; vertical-align: middle;">
+            <span class="customerbuttons" style="vertical-align: middle;">Sign Up</span>
+          </a>
+          <a href="shoppingcart.html" style="display: inline-block;">
+            <img src="https://cdn.discordapp.com/attachments/1081053312775889007/1086884770002243595/checkout.png" alt="Cart Icon" style="height: 30px; margin-right: 10px; vertical-align: middle;">
+            <span class="customerbuttons" style="vertical-align: middle;">Shopping Cart</span>
+          </a>
+          <a href="https://www.instagram.com/">
+            <img src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2016/05/instagram-logo.png" alt="Instagram logo" style="height: 30px; margin-left: 10px; z-index: -1;">
+          </a>
+          <a href="https://www.facebook.com/">
+            <img src="https://img.freepik.com/premium-vector/blue-social-media-logo_197792-1759.jpg?w=2000" alt="fb logo" style="height: 30px; margin-left: 10px; z-index: -1;">
+          </a>
+        </span>
+      </td>
+    </tr>   
+  </table> 
         
     <p style="background-color: red; text-align: right; margin: 0; line-height: 2.5">
         
-        <select id = "dropdown"; onchange = "location = this.value">
+        <select id="dropdown" onchange="location=this.value">
         <option value = "">CDs/DVDs</option>
-        <option value = "https://www.google.com/">Classical</option></a>
+        <option value = "https://www.google.com/">Classical</option>
         <option value = "https://www.google.com/">Pop</option>
         <option value = "https://www.google.com/">Rock & Metal</option>   
         <option value = "https://www.google.com/">Reggae</option>   
         <option value = "https://www.google.com/">Other</option>   
         
         </select> 
-        <select id = "dropdown2"; onchange = "location = this.value">
+        <select id="dropdown2" onchange="location=this.value">
         <option value = "">Vinyls</option>
-        <option value = "https://www.google.com/">Record Players</option></a>
+        <option value = "https://www.google.com/">Record Players</option>
         <option value = "https://www.google.com/">Vinyls</option>
         </select> 
-        <select id = "dropdown3; onchange = "location = this.value">
+        <select id="dropdown3" onchange="location=this.value">
         <option value = "">Merchandise</option>
-        <option value = "https://www.google.com/">Shirts & hoodies</option></a>
+        <option value = "https://www.google.com/">Shirts & hoodies</option>
         <option value = "https://www.google.com/">Accessories</option>
         </select> 
-        <select id = "dropdown4; onchange = "location = this.value">
+        <select id="dropdown4" onchange="location=this.value">
         <option>Instruments</option>
         <option value = "https://www.google.com/">Guitars</option>
         <option value = "https://www.google.com/">Drums</option>    
@@ -136,10 +246,25 @@
     <a href="#top" style = "position: fixed; bottom:0; font-weight: bold; font-size: 30px"><b>^</b></a>
     
     
-    <p style="bottom: 0; width:100%; background-color: white">
+    <p style="bottom: 0; width:100%; background-color: lightblue">
     <br><br>
     </p>
-    
+    <script src="script.js"></script>
+
+    <div style="position: fixed; bottom: 0; width:100%; background-color: beige;">
+        <footer>
+          <div class="footer-links">
+            <a href="account.html">Account</a>
+            <a href="#">Contact Us</a>
+            <a href="faq.html">FAQ</a>
+            <a href="index.html">Home</a>
+            <a href="signin.html">Sign In</a>
+            <a href="signup.html">Sign Up</a>
+            <a href="shoppingcart.html">Shopping Cart</a>
+          </div>
+          </footer> 
+        </div>      
+
     </body>
     
     
