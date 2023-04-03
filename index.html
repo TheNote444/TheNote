@@ -1,8 +1,8 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 <head>
 
-  <title>CDs/DVDs</title>
+  <title>The Note</title>
   <style>
     /* styles for select elements */
     select {
@@ -17,33 +17,33 @@
     
   /* styles for the footer */
   footer {
-  height: 20px; /* Set the height of the footer as needed */
+    background-color: #f0f0f0;
+    padding: 20px;
 }
 
 .footer-links {
   display: flex; /* Use flexbox to create a horizontal layout */
-  justify-content: space-between; /* Add space between links */
-}
-
-.footer-links a {
+  justify-content: center; /* Add space between links */
   font-size: 14px; /* Adjust the font size as needed */
 }
 
-
-    /* remove text decoration for all links */
+  /* remove text decoration for all links */
     a {
       padding-right: 20px;
     }
+  
+    /* style for table */
     table {
 			border-collapse: collapse;
 			width: 100%;
             
 		}
-		
+	 /* set left alignment for table cells */	
 		td, th {
 			text-align: left;
 		}
-		
+
+	/* set maximum width for images */	
 		img {
 			max-width: 100%;
 			height: auto;
@@ -59,60 +59,68 @@
     select:hover {
         border-color: black;
     }
-      
+  
+    /* style for search bar */    
     #searchbar {
         width: 500px;
         height: 30px;
         font-size: 20px;
         border-radius: 5px
     }
-    
+    /* style for customer buttons */
     .customerbuttons {
         color: black;
         text-decoration: underline;
         font-weight: bold
     }
+    /* style for customer buttons */
       .row {
     display: block;
     text-align: center;
   }
   
-
-  .column {
-    column {
+    /* style for column */
+   .column {
     margin: 0 10px; /* Change the value to adjust the spacing */
   }
-  }
-
+  
+    /* style for images in columns */
   .column img {
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
 
+    /* style for caption */
   .caption {
     text-align: center;
     margin-top: 10px;
   }
+
+    /* style for body */
   body {
   font-family: Verdana, sans-serif;
   margin: 0;
 }
 
+/* use box-sizing border-box for all elements */
 * {
   box-sizing: border-box;
 }
 
+ /* style for row with columns */
 .row > .column {
   padding: 0 8px;
 }
 
+/* clear floats after row */
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
 
+/* style for column */
 .column {
   float: left;
   width: 25%;
@@ -152,6 +160,7 @@
   font-weight: bold;
 }
 
+/* This section styles the close button when it's hovered or in focus */
 .close:hover,
 .close:focus {
   color: #999;
@@ -159,182 +168,170 @@
   cursor: pointer;
 }
 
+/* This section hides the slides */
 .mySlides {
   display: none;
+  justify-content: center; /* Center the slider horizontally */
+  align-items: center; /* Center the slider vertically */
 }
+
+/* This section styles the slider */
 #slider {
-  width: 100%;
-  margin: 0;
+  width: 90%; /* Set the width of the slider */
+  margin: 0 auto; /* Center the slider horizontally */
+  overflow: hidden;
 }
 
+/* This section styles the images inside the slider */
 .slide {
-  width: 100%;
-  height: auto;
-}
-.cursor {
-  cursor: pointer;
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%; /* Set the width of the images to 100% of the slider */
+  height: auto; /* Set the height of the images to be determined by the width to maintain aspect ratio */
+  object-fit: cover; /* Ensure the images fill the slider and maintain aspect ratio */
 }
 
 /* Number text (1/3 etc) */
 .numbertext {
-  color: #f2f2f2;
+  color: red;
   font-size: 12px;
   padding: 8px 12px;
   position: absolute;
   top: 0;
 }
 
+/* image bordering */
 img {
   margin-bottom: -4px;
 }
 
+/* hover over special deals section */
+.hover-shadow:hover {
+    filter: brightness(150%);
+}
+
+/* hover over shop by category section */
+.popularImages:hover {
+  opacity: 0.7;
+}
+
+/* This section styles the caption container */
 .caption-container {
   text-align: center;
   background-color: black;
   padding: 2px 16px;
-  color: white;
 }
-
+  
+/* This section styles the demo */
 .demo {
   opacity: 0.6;
 }
 
-      
+/* This section styles the navigation links */
+nav a {
+  color: red;
+  text-decoration: none;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
   </style>
 </head>
 <body>
-    <header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="aboutus.html">About Us</a></li>
-            <li><a href="account.html">Account</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-            <li><a href="main.html">Main</a></li>
-            <li><a href="shoppingcart.html">Shopping Cart</a></li>
-            <li><a href="signin.html">Sign In</a></li>
-            <li><a href="signup.html">Sign Up</a></li>
-        </ul>
-    </nav>
-</header>
-  
+   
   <!-- header with image link -->
-  <div style="background-color: #00222A;">
-    <table>
-            <tr>
-            <td>   
-            <a href="index.html"><img src="https://cdn.discordapp.com/attachments/1081053312775889007/1086413142743068802/cropped.jpg"  width="450px" height="200px"></a>
-            </td>
-            <td style = "text-align: right; color: grey">
-                333 S Twin Oaks Valley Rd, San Marcos, CA 92096<br><a type = "number"><a href="tel:+8583828890"><span style = "color: lightblue">+1 (858) 382-8890</span>
-            </td>    
-            </tr>    
-            
-    </table>
-  </a>
+<div style="background-color: #00222A;">
+  <table>
+    <tr>
+      <td>
+        <a href="index.html"><img src="https://cdn.discordapp.com/attachments/1081053312775889007/1086413142743068802/cropped.jpg" alt="image description" width="450" height="200"></a>
+      </td>
+      <td style="text-align: right; color: grey">
+        333 S Twin Oaks Valley Rd, San Marcos, CA 92096<br><a href="tel:+18583828890"><span style="color: lightblue">+1 (858) 382-8890</span></a>
+      </td>
+    </tr>
+  </table>
 </div>
   
-  <!-- search bar and navigation links -->
-  <table style = "background-color: white">    
-    <tr>
-        <td><input type = "text" id = "searchbar"><input type = "submit" value = "Search" style = "height: 34px; width: 75px; border-color: grey; border-radius: 5px; border-width: 1px; font-size: 20px; background-color: lightgrey"></td>
-        <td style="text-align: right; width: 35em">
-            <span style="display: flex; align-items: center;">
-              <a href="google.com"></a>
-              <img src="https://cdn.discordapp.com/attachments/1081053312775889007/1086884715753123942/Account.png" alt="Account Icon" style="height: 30px; margin-left: 10px;">
-              <a href="account.html"><span class = "customerbuttons">Account</span></a>
-              <img src="https://cdn.discordapp.com/attachments/1081053312775889007/1086884742458245130/signup.png" alt="Sign Up Icon" style="height: 30px; margin-left: 10px;">
-              <a href="signup.html"><span class = "customerbuttons">Sign Up</span></a>
-              <img src="https://cdn.discordapp.com/attachments/1081053312775889007/1086884770002243595/checkout.png" alt="Cart Icon" style="height: 30px; margin-left: 10px;">
-              <a href="shoppingcart.html"><span class = "customerbuttons">Shopping Cart</span></a>
-              <img src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2016/05/instagram-logo.png" alt="Instagram logo" height= "100px" width = "100px"/>
-    <img src="https://img.freepik.com/premium-vector/blue-social-media-logo_197792-1759.jpg?w=2000" alt="fb logo" height = "19px" width = "49px">
-            </span>
-          </td>
-      </tr>   
-    </table>
+<!-- search bar and navigation links -->
+<table style="background-color: white; padding-top: 10px;">    
+  <tr>
+    <td>
+      <input type="text" id="searchbar">
+      <input type="submit" value="Search" style="height: 34px; width: 75px; border-color: grey; border-radius: 5px; border-width: 1px; font-size: 20px; background-color: lightgrey">
+    </td>
+    <td style="text-align: right; width: 35em">
+      <span style="display: flex; align-items: center;">
+        <a href="google.com">
+          <img src="https://cdn.discordapp.com/attachments/1081053312775889007/1086884715753123942/Account.png" alt="Account Icon" style="height: 30px; margin-right: 10px;">
+        </a>
+        <a href="account.html"><span class="customerbuttons">Account</span></a>
+        <a href="signup.html" style="display: inline-block;">
+          <img src="https://cdn.discordapp.com/attachments/1081053312775889007/1086884742458245130/signup.png" alt="Sign Up Icon" style="height: 30px; margin-right: 10px; vertical-align: middle;">
+          <span class="customerbuttons" style="vertical-align: middle;">Sign Up</span>
+        </a>
+        <a href="shoppingcart.html" style="display: inline-block;">
+          <img src="https://cdn.discordapp.com/attachments/1081053312775889007/1086884770002243595/checkout.png" alt="Cart Icon" style="height: 30px; margin-right: 10px; vertical-align: middle;">
+          <span class="customerbuttons" style="vertical-align: middle;">Shopping Cart</span>
+        </a>
+        <a href="https://www.instagram.com/">
+          <img src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2016/05/instagram-logo.png" alt="Instagram logo" style="height: 30px; margin-left: 10px; z-index: -1;">
+        </a>
+        <a href="https://www.facebook.com/">
+          <img src="https://img.freepik.com/premium-vector/blue-social-media-logo_197792-1759.jpg?w=2000" alt="fb logo" style="height: 30px; margin-left: 10px; z-index: -1;">
+        </a>
+      </span>
+    </td>
+  </tr>   
+</table> 
   
   <!-- navigation menu with select elements -->
-  <p style="background-color: red; text-align: right; margin: 0; line-height: 2.5">  
-    <select style="background-color: red"; id="dropdown"; onchange="location = this.value">
-      <option value="">CDs/DVDs</option>
-      <option value="https://www.google.com/">Classical</option></a>
-      <option value="https://www.google.com/">Pop</option>
-      <option value="https://www.google.com/">Rock & Metal</option>   
-      <option value="https://www.google.com/">Reggae</option>   
-      <option value="https://www.google.com/">Other</option>   
-    </select> 
-    <select style="background-color: red">
-      <option value = "https://www.google.com/">Records</option>
-      <option value = "https://www.google.com/">Record Players</option>
-      <option value = "https://www.google.com/">Vinyls</option>    
-    </select> 
-    <select style="background-color: red">
-      <option value = "https://www.google.com/">Merchandise</option>
-      <option value = "https://www.google.com/">Shirts & Hoodies</option>
-      <option value = "https://www.google.com/">Accesories</option>    
-    </select> 
-    <select style="background-color: red">
-      <option value = "https://www.google.com/">Instruments</option>
-      <option value = "https://www.google.com/">Guitars</option>
-      <option value = "https://www.google.com/">Drums</option>    
-      <option value = "https://www.google.com/">Woodwinds</option> 
-      <option value = "https://www.google.com/">Pianos & Keyboards</option> 
-    </select> 
-    <br>
-    <div style="display: flex; justify-content: center; align-items: center; flex-direction: column; text-align: center;">
-      <h2 style="font-size: 28px; text-decoration: underline;">Our Philosophy</h2>
-      <img src="philosophy.jpg" alt="Example Product 2" width="850px" height="400px" style="margin-bottom: 20px;">
-      <h2 style="font-size: 28px; text-decoration: underline;"></h2>
-      <p style="font-size: 20px;">The Note is a center for all your music needs! Whether it’s instruments, music, or merchandise from your favorite artists, we have it! We are a local operated business and we truly care about all of your musical needs. </p>
-    </div>
+ <!-- navigation menu with select elements -->
+<p style="background-color: red; text-align: right; margin: 0; line-height: 2.5">
+  <select style="background-color: red;" id="dropdown" onchange="location = this.value">
+    <option value="">CDs/DVDs</option>
+    <option value="https://www.google.com/">Classical</option>
+    <option value="https://www.google.com/">Pop</option>
+    <option value="https://www.google.com/">Rock &amp; Metal</option>
+    <option value="https://www.google.com/">Reggae</option>
+    <option value="https://www.google.com/">Other</option>
+  </select>
+  <select style="background-color: red;">
+    <option value="https://www.google.com/">Records</option>
+    <option value="https://www.google.com/">Record Players</option>
+    <option value="https://www.google.com/">Vinyls</option>
+  </select>
+  <select style="background-color: red;">
+    <option value="https://www.google.com/">Merchandise</option>
+    <option value="https://www.google.com/">Shirts &amp; Hoodies</option>
+    <option value="https://www.google.com/">Accessories</option>
+  </select>
+  <select style="background-color: red;">
+    <option value="https://www.google.com/">Instruments</option>
+    <option value="https://www.google.com/">Guitars</option>
+    <option value="https://www.google.com/">Drums</option>
+    <option value="https://www.google.com/">Woodwinds</option>
+    <option value="https://www.google.com/">Pianos &amp; Keyboards</option>
+  </select>
+  <br>
+</p>
 
+      <!-- Add a main section with a welcome message and featured articles -->
+   <!-- Add a main section with a welcome message and featured articles -->
+<div style="display: flex; justify-content: center; align-items: center; flex-direction: column; text-align: center;">
+  <h2 style="font-size: 28px; text-decoration: underline;">Our Philosophy</h2>
+  <img src="philosophy.jpg" alt="Example Product 2" width="850" height="400" style="margin-bottom: 20px;">
+  <h2 style="font-size: 28px; text-decoration: underline;">Featured Articles</h2>
+  <p style="font-size: 20px;">The Note is a center for all your music needs! Whether it’s instruments, music, or merchandise from your favorite artists, we have it! We are a locally operated business and we truly care about all of your musical needs. </p>
+</div>
 
-    <div id="slider">
-      <img class="slide" src="image1.jpg" alt="image1">
-      <img class="slide" src="image2.jpg" alt="image2">
-      <img class="slide" src="image3.jpg" alt="image3">
-      <img class="slide" src="image4.jpg" alt="image4">
-    </div>
-    
-        <div id="slider">
-            <img class="slide" src="image1.jpg" alt="image1">
-            <img class="slide" src="image2.jpg" alt="image2">
-            <img class="slide" src="image3.jpg" alt="image3">
-            <img class="slide" src="image4.jpg" alt="image4">
-            <img class="slide" src="image5.jpg" alt="image5">
-          </div>
-          
+<div id="slider">
+  <img class="slide" src="image1.jpg" alt="image1">
+  <img class="slide" src="image2.jpg" alt="image2">
+  <img class="slide" src="image3.jpg" alt="image3">
+  <img class="slide" src="image4.jpg" alt="image4">
+  <img class="slide" src="image5.jpg" alt="image5">
+</div>
+  
           <script>
             var slideIndex = 0;
             showSlides();
@@ -352,105 +349,101 @@ img {
             }
             </script>
             
-
-
-
-
-
-
             
-            <div style="margin-top: -50px;"></div>
-            <h3 style="text-align: center; background-color: red; padding: 80px; font-style: italic;">Shop By Category</h3>
-            <!-- stuff for specials will go here -->
+            <div style="text-align:center; background-color: red; padding: 60px;margin-top: 15px;">
+              <!-- content goes here -->
+              <h2>Shop By Category</h2>
+              <p>Click on the images below:</p>
+            </div>
+            <h3 style="text-align: center; font-style: italic">Records</h3>
+            <div style="text-align: center">
+              <img class="popularImages" src="recordplayer.jpg" alt="description of image" width="175" height="200" style="border-radius: 50px; margin-left: 15px; border: none;">
+              <img class="popularImages" src="vinyl.jpg" alt="description of image" width="175" height="200" style="border-radius: 50px; margin-left: 15px; border: none;">
+            </div>
+            
+            <h3 style="text-align: center; font-style: italic">Merchandise</h3>
+            <div style="text-align: center">
+              <img class="popularImages" src="merch.jpg" alt="description of image" width="175" height="200" style="border-radius: 50px; margin-left: 15px; border: 0;">
+              <img class="popularImages" src="hoodie.jpg" alt="description of image" width="175" height="200" style="border-radius: 50px; margin-left: 15px; border: 0;">
+              <img class="popularImages" src="shirt.jpg" alt="description of image" width="175" height="200" style="border-radius: 50px; margin-left: 15px; border: 0;">
+            </div>
+            
+            <h3 style="text-align: center; font-style: italic">Instruments</h3>
+            <div style="text-align: center">
+              <img class="popularImages" src="https://cdn.fuelrocks.com/1662629161341.jpg" alt="Why Ibanez Guitars Are The Best Electric Guitars To Buy – FuelRocks" width="175" style="border-radius: 50px; margin-left: 15px; border: 0;">
+              <img class="popularImages" src="https://www.samash.com/media/catalog/product/p/d/pdcm215pw.jpg?quality=80&amp;bg-color=255,255,255&amp;fit=bounds&amp;height=1200&amp;width=1200&amp;canvas=1200:1200" alt="Buy PDP Concept Maple Series 5-Piece Drum Shell Pack (Pearlescent White, Lacquer) | Sam Ash Music" width="175" style="border-radius: 50px; margin-left: 15px; border: 0;">
+              <img class="popularImages" src="https://i5.walmartimages.com/asr/593b00d6-c75c-4d3b-9a4e-ee9ab7cbbe6e.0dfc4d8e1a184087d373a9f0a5104c55.jpeg" alt="61 Keys Electronic Keyboard Piano for Beginner, with Music Stand and Mini Microphone, Multi-function Educational Music Instrument Toy - Walmart.com" width="175" style="border-radius: 50px; margin-left: 15px; border: 0;">
+              <img class="popularImages" src="https://www.samash.com/media/catalog/product/k/e/keb_mo_1.png?quality=80&amp;bg-color=255,255,255&amp;fit=bounds&amp;height=1200&amp;width=1200&amp;canvas=1200:1200" alt="Buy Gibson Keb&#39; Mo&#39; &quot;3.0&quot; 12-Fret J-" width="175" style="border-radius: 50px; margin-left: 15px; border: 0;">
+            </div>
 
-            <h3 style = "text-align: center; font-style: italic">
-              Records</h3>
-              <div align = "center">
-                  <img class="popularImages" border="1px" src="recordplayer.jpg" alt="description of image" width="175px" height="200px" style="border-radius: 50px; margin-left: 15px">
-                  <img class="popularImages" border="1px" src="vinyl.jpg" alt="description of image" width="175px" height="200px" style="border-radius: 50px; margin-left: 15px">
-              </div>    
-
-
-          <h3 style = "text-align: center; font-style: italic">
-              Merchandise</h3>
-              <div align = "center">
-                  <img class="popularImages" border="1px" src="merch.jpg" alt="description of image" width="175px" height="200px" style="border-radius: 50px; margin-left: 15px">
-                  <img class="popularImages" border="1px" src="hoodie.jpg" alt="description of image" width="175px" height="200px" style="border-radius: 50px; margin-left: 15px">
-                  <img class="popularImages" border="1px" src="shirt.jpg" alt="description of image" width="175px" height="200px" style="border-radius: 50px; margin-left: 15px">
-              </div>    
-
-
-
-          <h3 style = "text-align: center; font-style: italic">Instruments</h3>
-          <div align = "center">
-              <img class = "popularImages" border = "1px" src="https://cdn.fuelrocks.com/1662629161341.jpg" alt="Why Ibanez Guitars Are The Best Electric Guitars To Buy – FuelRocks" width = "175px" style = "border-radius: 50px;">
-              <img class = "popularImages" border = "1px" src="https://www.samash.com/media/catalog/product/p/d/pdcm215pw.jpg?quality=80&amp;bg-color=255,255,255&amp;fit=bounds&amp;height=1200&amp;width=1200&amp;canvas=1200:1200" alt="Buy PDP Concept Maple Series 5-Piece Drum Shell Pack (Pearlescent White,  Lacquer) | Sam Ash Music" width = "175px" style = "border-radius: 50px; margin-left: 15px">
-              <img class = "popularImages" border = "1px" src="https://i5.walmartimages.com/asr/593b00d6-c75c-4d3b-9a4e-ee9ab7cbbe6e.0dfc4d8e1a184087d373a9f0a5104c55.jpeg" alt="61 Keys Electronic Keyboard Piano for Beginner, with Music Stand and Mini  Microphone, Multi-function Educational Music Instrument Toy - Walmart.com" width = "175px" style = "border-radius: 50px; margin-left: 15px">
-              <img class = "popularImages" border = "1px" src="https://www.samash.com/media/catalog/product/k/e/keb_mo_1.png?quality=80&amp;bg-color=255,255,255&amp;fit=bounds&amp;height=1200&amp;width=1200&amp;canvas=1200:1200" alt="Buy Gibson Keb&#39; Mo&#39; &quot;3.0&quot; 12-Fret J-45 Acoustic Guitar (Vintage Sunburst) |  Sam Ash Music"  width = "175px" style = "border-radius: 50px; margin-left: 15px">
+          <h3 style="text-align: center; font-style: italic;">CDs &amp; DVDs</h3>
+          <div style="display: flex; justify-content: center;">
+            <img class="popularImages" src="classical.jpg" alt="Classical music" width="175" height="200" style="border-radius: 50px; margin: 0 15px;">
+            <img class="popularImages" src="pop.jpg" alt="Pop music" width="175" height="200" style="border-radius: 50px; margin: 0 15px;">
+            <img class="popularImages" src="rock.jpg" alt="Rock music" width="175" height="200" style="border-radius: 50px; margin: 0 15px;">
+            <img class="popularImages" src="reggae.jpg" alt="Reggae music" width="175" height="200" style="border-radius: 50px; margin: 0 15px;">
           </div>
-
-          <h3 style = "text-align: center; font-style: italic">
-              CDs & DVD</h3>
-              <div align = "center">
-                  <img class="popularImages" border="1px" src="classical.jpg" alt="description of image" width="175px" height="200px" style="border-radius: 50px; margin-left: 15px">
-                  <img class="popularImages" border="1px" src="pop.jpg" alt="description of image" width="175px" height="200px" style="border-radius: 50px; margin-left: 15px">
-                  <img class="popularImages" border="1px" src="rock.jpg" alt="description of image" width="175px" height="200px" style="border-radius: 50px; margin-left: 15px">
-                  <img class="popularImages" border="1px" src="reggae.jpg" alt="description of image" width="175px" height="200px" style="border-radius: 50px; margin-left: 15px">
-              </div> 
-  
+          
       
-               <!-- The 3 columns -->
- <div style="text-align:center; background-color: red; padding: 60px;">
-  <h2>Our Specials</h2>
-  <p>Click on the images below:</p>
-</div>
-<div class="row" style="background-color: lightblue; height: 500px; display: flex; flex-direction: row;">
-  <div class="column">
-    <figure>
-      <img src="drums.jpg" style="width:750px;height:300px" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
-      <figcaption>
-        <h2 style="text-align: center;">Check out our new Pearl’s drum set</h2>
-        <p style="text-align: center;">Make your Drumming Voice heard with Pearl’s sound-sculpting array of premium percussion</p>
-      </figcaption>
-    </figure>
-  </div>
-  <div class="column">
-    <figure>
-      <img src="accessories.jpg" style="width:750px;height:300px" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
-      <figcaption>
-        <h2 style="text-align: center;">Merchandise</h2>
-        <p style="text-align: center;">Get your hands on our awesome merchandise! Buy one get one half off.</p>
-      </figcaption>
-    </figure>
-  </div>
-  <div class="column">
-    <figure>
-      <img src="ibanez.jpg" style="width:750px;height:300px" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
-      <figcaption>
-        <h2 style="text-align: ;">Guitars</h2>
-        <p style="text-align: center;">10% off all electric guitars by Ibanez</p>
-      </figcaption>
-    </figure>
-  </div>
+              <div style="text-align:center; background-color: red; padding: 60px;margin-top: 15px;">
+                <h2>Our Specials</h2>
+                <p>Click on the images below:</p>
+              </div>
+              
+              <div class="row" style="background-color: lightblue; height: 500px; display: flex; flex-direction: row;">
+                <div class="column">
+                  <figure>
+                    <img src="drums.jpg" style="width:750px;height:300px" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+                    <figcaption>
+                      <h2 style="text-align: center;">New Pearl’s drum sets</h2>
+                      <p style="text-align: center;">Make your Drumming Voice heard with Pearl’s sound-sculpting array of premium percussion</p>
+                    </figcaption>
+                  </figure>
+                </div>
+                <div class="column">
+                  <figure>
+                    <img src="accessories.jpg" style="width:750px;height:300px" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+                    <figcaption>
+                      <h2 style="text-align: center;">Merchandise</h2>
+                      <p style="text-align: center;">Get your hands on our awesome merchandise! Buy one get one half off.</p>
+                    </figcaption>
+                  </figure>
+                </div>
+                <div class="column">
+                  <figure>
+                    <img src="ibanez.jpg" style="width:750px;height:300px" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+                    <figcaption>
+                      <h2 style="text-align:center;">Guitars</h2>
+                      <p style="text-align: center;">10% off all electric guitars by Ibanez</p>
+                    </figcaption>
+                  </figure>
+                </div>
+              
+                <div class="column">
+                  <figure>
+                    <img src="cds.jpg" style="width:750px;height:300px" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+                    <figcaption>
+                      <h2 style="text-align: center;">DVD's and CD's</h2>
+                      <p style="text-align: center;">Buy 5 cd's or dvd's for a total of $49</p>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+            
+      
 
-  <div class="column">
-    <figure>
-      <img src="cds.jpg" style="width:750px;height:300px" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
-      <figcaption>
-        <h2 style="text-align: center;">DVD's and CD's</h2>
-        <p style="text-align: center;">Buy 5 cd's or dvd's for a total of $49</p>
-      </figcaption>
-    </figure>
-  </div>
-</div>
-         
-
-        <div style="position: fixed; bottom: 0; width:100%; background-color: lightblue">
-            <footer>
-                    <div class="footer-links">
-                      <a href="faq.html">FAQs</a>
-                      <a href="#">Contact Us</a>
-                    </div>
-                  </footer>       
+              <div style="position: fixed; bottom: 0; width:100%; background-color: beige;">
+                <footer>
+                  <div class="footer-links">
+                    <a href="account.html">Account</a>
+                    <a href="#">Contact Us</a>
+                    <a href="faq.html">FAQ</a>
+                    <a href="index.html">Home</a>
+                    <a href="signin.html">Sign In</a>
+                    <a href="signup.html">Sign Up</a>
+                    <a href="shoppingcart.html">Shopping Cart</a>
+                  </div>
+                  </footer> 
+                </div>      
       </body>
       </html>
