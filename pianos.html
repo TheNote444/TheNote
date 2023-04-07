@@ -1,0 +1,220 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+
+  <title>Pianos</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet"href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+   
+  <!-- header with image link -->
+<div style="background-color: #00222A;">
+  <table>
+    <tr>
+      <td>
+        <a href="index.html"><img src="https://cdn.discordapp.com/attachments/1081053312775889007/1086413142743068802/cropped.jpg" alt="image description" width="450" height="200"></a>
+      </td>
+      <td style="text-align: right; color: grey">
+        333 S Twin Oaks Valley Rd, San Marcos, CA 92096<br><a href="tel:+18583828890"><span style="color: lightblue">+1 (858) 382-8890</span></a>
+      </td>
+    </tr>
+  </table>
+</div>
+  
+<!-- search bar and navigation links -->
+<table style="background-color: white; padding-top: 10px;">    
+  <tr>
+    <td>
+      <input type="text" id="searchbar">
+      <input type="submit" value="Search" style="height: 34px; width: 75px; border-color: grey; border-radius: 5px; border-width: 1px; font-size: 20px; background-color: lightgrey">
+    </td>
+    <td style="text-align: right; width: 35em">
+      <span style="display: flex; align-items: center;">
+        <a href="google.com">
+          <img src="https://cdn.discordapp.com/attachments/1081053312775889007/1086884715753123942/Account.png" alt="Account Icon" style="height: 30px; margin-right: 10px;">
+        </a>
+        <a href="account.html"><span class="customerbuttons">Account</span></a>
+        <a href="signup.html" style="display: inline-block;">
+          <img src="https://cdn.discordapp.com/attachments/1081053312775889007/1086884742458245130/signup.png" alt="Sign Up Icon" style="height: 30px; margin-right: 10px; vertical-align: middle;">
+          <span class="customerbuttons" style="vertical-align: middle;">Sign Up</span>
+        </a>
+        <a href="shoppingcart.html" style="display: inline-block;">
+          <img src="https://cdn.discordapp.com/attachments/1081053312775889007/1086884770002243595/checkout.png" alt="Cart Icon" style="height: 30px; margin-right: 10px; vertical-align: middle;">
+          <span class="customerbuttons" style="vertical-align: middle;">Shopping Cart</span>
+        </a>
+        <a href="https://www.instagram.com/">
+          <img src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2016/05/instagram-logo.png" alt="Instagram logo" style="height: 30px; margin-left: 10px; z-index: -1;">
+        </a>
+        <a href="https://www.facebook.com/">
+          <img src="https://img.freepik.com/premium-vector/blue-social-media-logo_197792-1759.jpg?w=2000" alt="fb logo" style="height: 30px; margin-left: 10px; z-index: -1;">
+        </a>
+      </span>
+    </td>
+  </tr>   
+</table> 
+  
+  <!-- navigation menu with select elements -->
+ <!-- navigation menu with select elements -->
+<p style="background-color: red; text-align: right; margin: 0; line-height: 2.5">
+  <select style="background-color: red;" id="dropdown" onchange="location = this.value">
+    <option value="">CDs/DVDs</option>
+    <option value="https://www.google.com/">Classical</option>
+    <option value="https://www.google.com/">Pop</option>
+    <option value="https://www.google.com/">Rock &amp; Metal</option>
+    <option value="https://www.google.com/">Reggae</option>
+    <option value="https://www.google.com/">Other</option>
+  </select>
+  <select style="background-color: red;">
+    <option value="https://www.google.com/">Records</option>
+    <option value="https://www.google.com/">Record Players</option>
+    <option value="https://www.google.com/">Vinyls</option>
+  </select>
+  <select style="background-color: red;">
+    <option value="https://www.google.com/">Merchandise</option>
+    <option value="https://www.google.com/">Shirts &amp; Hoodies</option>
+    <option value="https://www.google.com/">Accessories</option>
+  </select>
+  <select onchange="window.location.href=this.value;" style="background-color: red;">
+    <option value="https://www.google.com/">Instruments</option>
+    <option value="guitars.html">Guitars</option>
+    <option value="drums.html">Drums</option>
+    <option value="pianos.html">Pianos &amp; Keyboards</option>
+  </select>
+  <br>
+</p>
+<h1 style="text-align: center; padding: 20px;">Check out our electric piano and keyboard selection!</h1>
+
+<!----- Pianos ------------>
+
+<!----- Digital Pianos ------------>
+<div class="row" style="display: flex;"></div>
+<h2><span class="underline">Electric Pianos</span></h2>
+<div class="row" style="display: flex;">
+  <div class="col-3">
+    <img src="piano1.jpg" style="width: 75%; height: auto;">
+    <h4>Yamaha DGX-670 88-Key Portable Grand White</h4>
+    <div class="rating">
+      <i class="fa fa-star yellow"></i>
+      <i class="fa fa-star yellow"></i>
+      <i class="fa fa-star yellow"></i>
+      <i class="fa fa-star yellow"></i>
+      <i class="fa fa-star yellow"></i>
+      <p class="red">Price:$275</p>
+    </div>
+  </div>
+  <div class="col-3">
+    <img src="piano2.jpg"style="width: 75%; height: auto;">
+    <h4>Williams Allegro III Digital Piano Black 88 Key</h4>
+    <div class="rating">
+      <i class="fa fa-star yellow"></i>
+      <i class="fa fa-star yellow"></i>
+      <i class="fa fa-star yellow"></i>
+      <i class="fa fa-star-o yellow"></i>
+      <i class="fa fa-star-o yellow"></i>
+      <p class="red">Price:$320</p>
+    </div>
+  </div>
+  <div class="col-3">
+    <img src="piano3.jpg" style="width: 75%; height: auto;">
+    <h4>Williams Overture III Digital Piano Mahogany Red</h4>
+    <div class="rating">
+      <i class="fa fa-star yellow"></i>
+      <i class="fa fa-star yellow"></i>
+      <i class="fa fa-star yellow"></i>
+      <i class="fa fa-star yellow"></i>
+      <i class="fa fa-star yellow"></i>
+      <p class="red">Price:$475</p>
+    </div>
+  </div>
+  <div class="col-3">
+    <img src="piano4.jpg" style="width: 75%; height: auto;">
+    <h4>Williams Overture 2 88-Key Console Digital Piano</h4>
+    <div class="rating">
+      <i class="fa fa-star yellow"></i>
+      <i class="fa fa-star yellow"></i>
+      <i class="fa fa-star yellow"></i>
+      <i class="fa fa-star yellow"></i>
+      <i class="fa fa-star-o yellow"></i>
+      <p class="red">Price:$600</p>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<!----- Digital Pianos ------------>
+<div class="row" style="display: flex;"></div>
+<h2><span class="underline">Electric Keyboards</span></h2>
+<div class="row" style="display: flex;">
+  <div class="col-3">
+    <img src="keyboard1.jpg" style="width: 75%; height: auto;">
+    <h4>KORG Pa1000 61-Key Professional Arranger</h4>
+    <div class="rating">
+      <i class="fa fa-star yellow"></i>
+      <i class="fa fa-star yellow"></i>
+      <i class="fa fa-star yellow"></i>
+      <i class="fa fa-star yellow"></i>
+      <i class="fa fa-star yellow"></i>
+      <p class="red">Price:$500</p>
+    </div>
+  </div>
+  <div class="col-3">
+    <img src="keyboard2.jpg"style="width: 75%; height: auto;">
+    <h4>Yamaha PSR-SX900 61-Key High-Level Arranger Keyboard</h4>
+    <div class="rating">
+      <i class="fa fa-star yellow"></i>
+      <i class="fa fa-star yellow"></i>
+      <i class="fa fa-star yellow"></i>
+      <i class="fa fa-star-o yellow"></i>
+      <i class="fa fa-star-o yellow"></i>
+      <p class="red">Price:$700</p>
+    </div>
+  </div>
+  <div class="col-3">
+    <img src="keyboard3.jpg" style="width: 75%; height: auto;">
+    <h4>Yamaha PSR-E373 61-Key Portable Keyboard With Power Adapter</h4>
+    <div class="rating">
+      <i class="fa fa-star yellow"></i>
+      <i class="fa fa-star yellow"></i>
+      <i class="fa fa-star yellow"></i>
+      <i class="fa fa-star yellow"></i>
+      <i class="fa fa-star yellow"></i>
+      <p class="red">Price:$650</p>
+    </div>
+  </div>
+  <div class="col-3">
+    <img src="keyboard4.jpg" style="width: 75%; height: auto;">
+    <h4>Alesis Harmony 54 54-Key Portable Keyboard With Built-In Speakers</h4>
+    <div class="rating">
+      <i class="fa fa-star yellow"></i>
+      <i class="fa fa-star yellow"></i>
+      <i class="fa fa-star yellow"></i>
+      <i class="fa fa-star yellow"></i>
+      <i class="fa fa-star-o yellow"></i>
+      <p class="red">Price:$400</p>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<div style="position: fixed; bottom: 0; width:100%; background-color: beige;">
+  <footer>
+    <div class="footer-links">
+      <a href="account.html">Account</a>
+      <a href="#">Contact Us</a>
+      <a href="faq.html">FAQ</a>
+      <a href="index.html">Home</a>
+      <a href="signin.html">Sign In</a>
+      <a href="signup.html">Sign Up</a>
+      <a href="shoppingcart.html">Shopping Cart</a>
+    </div>
+    </footer> 
+  </div>      
+
+
+
+   </body>
+   </html>
